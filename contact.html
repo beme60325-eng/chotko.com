@@ -2,43 +2,21 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8">
-  <title>RDR2 — Контакти</title>
+  <title>Контакти — RDR2</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-<ul class="site-menu" id="main-menu">
-  <li><a href="./index.html">Головна</a></li>
-  <li><a href="./about.html">Про гру</a></li>
-  <li><a href="./releases.html">Дати релізів</a></li>
-  <li><a href="./gallery.html">Галерея</a></li>
-  <li><a href="./contact.html">Контакти</a></li>
-</ul>
-<hr/>
-<script>
-(function(){
-  var menu = document.getElementById('main-menu');
-  if(!menu) return;
-  menu.addEventListener('click', function(e){
-    var a = e.target.closest('a');
-    if(a && a.getAttribute('href')){
-      e.preventDefault();
-      window.location.href = a.getAttribute('href');
-    }
-  });
-})();
-</script>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про гру</a></li>
+      <li><a href="releases.html">Релізи</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </nav>
 
-<header class="header"><h1>Контакти</h1></header>
-<section>
-  <p>Цей розділ містить контактну інформацію автора сайту.</p>
-  <ul class="contact-list">
-    <li>Автор сайту: Поліщук Ілля Ю</li>
-    <li>Email: <span class="email">dji357a@gmail.com</span></li>
-  </ul>
-</section>
-<footer class="site-footer">Дякуємо за перегляд.</footer>
-
-  </div>
+  <h1>Контакти</h1>
+  <p><strong>Автор:</strong> Поліщук Ілля Ю</p>
+  <p><strong>Email:</strong> dji357a@gmail.com</p>
 </body>
 </html>

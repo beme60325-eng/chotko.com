@@ -2,48 +2,20 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8">
-  <title>RDR2 — Про гру</title>
+  <title>Про гру — RDR2</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-<ul class="site-menu" id="main-menu">
-  <li><a href="./index.html">Головна</a></li>
-  <li><a href="./about.html">Про гру</a></li>
-  <li><a href="./releases.html">Дати релізів</a></li>
-  <li><a href="./gallery.html">Галерея</a></li>
-  <li><a href="./contact.html">Контакти</a></li>
-</ul>
-<hr/>
-<script>
-(function(){
-  var menu = document.getElementById('main-menu');
-  if(!menu) return;
-  menu.addEventListener('click', function(e){
-    var a = e.target.closest('a');
-    if(a && a.getAttribute('href')){
-      e.preventDefault();
-      window.location.href = a.getAttribute('href');
-    }
-  });
-})();
-</script>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про гру</a></li>
+      <li><a href="releases.html">Релізи</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </nav>
 
-<header class="header"><h1>Про гру</h1></header>
-<section>
-  <p>Red Dead Redemption 2 — пригодницька гра від Rockstar Studios. Події відбуваються наприкінці XIX століття.
-  Головний герой — Артур Морган, член банди Van der Linde.</p>
-</section>
-<section>
-  <h2>Ключові особливості</h2>
-  <ul>
-    <li>Відкритий світ великого масштабу</li>
-    <li>Сюжетна кампанія з глибокими персонажами</li>
-    <li>Red Dead Online — онлайновий режим</li>
-  </ul>
-</section>
-<footer class="site-footer">Автор: Поліщук Ілля Ю — <span class="email">dji357a@gmail.com</span></footer>
-
-  </div>
+  <h1>Про гру</h1>
+  <p>Red Dead Redemption 2 — це пригодницька гра від Rockstar, дія якої відбувається наприкінці XIX століття...</p>
 </body>
 </html>

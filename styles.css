@@ -1,77 +1,31 @@
-:root{
-  --bg: #f7f6f3;
-  --card: #ffffff;
-  --accent: #8b3a2f;
-  --accent-2: #c98b6b;
-  --muted: #6b6b6b;
-  --max-width: 1100px;
-  --radius: 8px;
-  --page-padding: 20px;
-  --shadow: 0 6px 18px rgba(0,0,0,0.08);
-  --nav-height: 60px;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
 }
-*{box-sizing: border-box;}
-html,body{height:100%;margin:0;padding:0;background:var(--bg);font-family:var(--font-sans);color:#222;font-size:16px;line-height:1.45;}
-.container{max-width:var(--max-width);margin:0 auto;padding:var(--page-padding);}
 
-/* Спискова навігація */
-.site-menu{
-  list-style: none; /* прибираємо маркери */
-  margin: 0;
+.menu {
+  list-style: none;
   padding: 0;
-  display: flex; /* горизонтальний ряд */
-  gap: 12px;
-  align-items: center;
-  height: var(--nav-height);
-  background: linear-gradient(90deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
-  padding: 0 12px;
-  border-radius: var(--radius);
-}
-.site-menu li{}
-.site-menu a{
-  display: inline-block;
-  padding: 8px 14px;
-  text-decoration: none;
-  color: var(--accent);
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background-color 150ms ease, color 150ms ease, transform 120ms ease;
-}
-/* Реакція на наведення */
-.site-menu a:hover{
-  background-color: rgba(139,58,47,0.10);
-  color: #4b1f18;
-  transform: translateY(-2px);
-}
-/* Реакція на фокус (клавіатура) */
-.site-menu a:focus{
-  outline: 2px solid rgba(139,58,47,0.18);
-  outline-offset: 2px;
-}
-/* Реакція на натискання (active) */
-.site-menu a:active{
-  background-color: rgba(139,58,47,0.18);
-  color: #2b110f;
-  transform: translateY(0);
+  display: flex;
+  background: #333;
 }
 
-/* Інші стилі збережені для сторінки */
-.header{margin:18px 0;}
-.header h1{margin:0 0 8px 0;font-size:clamp(20px,3vw,32px);letter-spacing:-0.5px;color:#1f1b19;}
-.hero,.figure{background:var(--card);padding:12px;border-radius:var(--radius);box-shadow:var(--shadow);}
-.hero img,.figure img{display:block;max-width:100%;height:auto;border-radius:6px;}
-.figcaption{font-size:0.9rem;color:var(--muted);margin-top:8px;}
-section{margin:18px 0;}
-.table-card{background:var(--card);padding:12px;border-radius:var(--radius);box-shadow:var(--shadow);overflow-x:auto;}
-table{width:100%;border-collapse:collapse;font-size:0.95rem;}
-thead th{text-align:left;padding:10px;border-bottom:2px solid #eee;color:#2b2b2b;}
-tbody td{padding:10px;border-bottom:1px solid #f0f0f0;color:#333;}
-tbody tr:hover td{background:linear-gradient(90deg, rgba(201,139,107,0.03), rgba(0,0,0,0));}
-.contact-list{list-style:none;padding:0;margin:0;}
-.contact-list li{padding:8px 0;color:#222;}
-.email{font-weight:700;color:var(--accent);}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:14px;}
-.gallery-item{background:var(--card);padding:8px;border-radius:6px;box-shadow:var(--shadow);text-align:center;}
-.site-footer{margin-top:28px;padding:14px 12px;text-align:center;color:var(--muted);font-size:0.9rem;}
-@media (max-width:600px){.site-menu{gap:8px;font-size:0.95rem;padding:6px;} .header h1{font-size:20px;} :root{--page-padding:12px;}}
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: #555;
+}
+
+h1 {
+  color: #222;
+}
