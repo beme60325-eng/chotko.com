@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>RDR2 — Головна</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+<ul class="site-menu" id="main-menu">
+  <li><a href="./index.html">Головна</a></li>
+  <li><a href="./about.html">Про гру</a></li>
+  <li><a href="./releases.html">Дати релізів</a></li>
+  <li><a href="./gallery.html">Галерея</a></li>
+  <li><a href="./contact.html">Контакти</a></li>
+</ul>
+<hr/>
+<script>
+(function(){
+  var menu = document.getElementById('main-menu');
+  if(!menu) return;
+  menu.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(a && a.getAttribute('href')){
+      e.preventDefault();
+      window.location.href = a.getAttribute('href');
+    }
+  });
+})();
+</script>
+
+<header class="header"><h1>Red Dead Redemption 2</h1></header>
+<main>
+  <section class="hero">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Red_Dead_Redemption_2_screenshot.jpg" alt="Скріншот RDR2">
+      <figcaption class="figcaption">Атмосферний скріншот з Red Dead Redemption 2.</figcaption>
+    </figure>
+  </section>
+</main>
+<footer class="site-footer">Створено за допомогою HTML + CSS. Автор: Поліщук Ілля Ю — <span class="email">dji357a@gmail.com</span></footer>
+
+  </div>
+</body>
+</html>
